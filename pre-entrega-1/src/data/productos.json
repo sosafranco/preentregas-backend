@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "title": "Mate Imperial",
+        "description": "El que usa Messi",
+        "price": "60000",
+        "img": "sin imagen",
+        "code": "abc123",
+        "stock": "10",
+        "status": true,
+        "thumbnails": []
+    },
+    {
+        "id": 2,
+        "title": "Mate Calabaza",
+        "description": "El mas pedido",
+        "price": "30000",
+        "img": "sin imagen",
+        "code": "abc124",
+        "stock": "3",
+        "status": true,
+        "thumbnails": []
+    },
+    {
+        "id": 3,
+        "title": "Mate Metalico",
+        "description": "Inoxidable",
+        "price": "30000",
+        "img": "sin imagen",
+        "code": "abc125",
+        "stock": "40",
+        "status": true,
+        "thumbnails": []
+    }
+]
