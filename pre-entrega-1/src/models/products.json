@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "title": "product 1",
+        "description": "description 1",
+        "category": "impar",
+        "price": 10,
+        "thumbnail": "image1.jpg",
+        "code": "CODE1",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 2,
+        "title": "product 2",
+        "description": "description 2",
+        "category": "par",
+        "price": 20,
+        "thumbnail": "image2.jpg",
+        "code": "CODE2",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 3,
+        "title": "product 3",
+        "description": "description 3",
+        "category": "impar",
+        "price": 30,
+        "thumbnail": "image3.jpg",
+        "code": "CODE3",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 4,
+        "title": "product 4",
+        "description": "description 4",
+        "category": "par",
+        "price": 40,
+        "thumbnail": "image4.jpg",
+        "code": "CODE4",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 5,
+        "title": "product 5",
+        "description": "description 5",
+        "category": "impar",
+        "price": 50,
+        "thumbnail": "image5.jpg",
+        "code": "CODE5",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 6,
+        "title": "product 6",
+        "description": "description 6",
+        "category": "par",
+        "price": 60,
+        "thumbnail": "image6.jpg",
+        "code": "CODE6",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 7,
+        "title": "product 7",
+        "description": "description 7",
+        "category": "impar",
+        "price": 70,
+        "thumbnail": "image7.jpg",
+        "code": "CODE7",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 8,
+        "title": "product 8",
+        "description": "description 8",
+        "category": "par",
+        "price": 80,
+        "thumbnail": "image8.jpg",
+        "code": "CODE8",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 9,
+        "title": "product 9",
+        "description": "description 9",
+        "category": "impar",
+        "price": 90,
+        "thumbnail": "image9.jpg",
+        "code": "CODE9",
+        "stock": 20,
+        "status": true
+    },
+    {
+        "id": 10,
+        "title": "product 10",
+        "description": "description 10",
+        "category": "par",
+        "price": 100,
+        "thumbnail": "image10.jpg",
+        "code": "CODE10",
+        "stock": 20,
+        "status": true
+    }
+]
