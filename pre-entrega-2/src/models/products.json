@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Product 1",
+        "description": "Description  product 1",
+        "category": "impar",
+        "price": "10",
+        "code": "abc10",
+        "stock": "100",
+        "status": "true"
+    }
+]
