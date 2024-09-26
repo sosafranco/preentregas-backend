@@ -1,12 +1,12 @@
 [
     {
-        "id": 1,
-        "title": "Product 1",
-        "description": "Description  product 1",
-        "category": "impar",
-        "price": "10",
-        "code": "abc10",
-        "stock": "100",
+        "id": 2,
+        "title": "Falopa",
+        "description": "de la buenaa",
+        "category": "Droga",
+        "price": "300",
+        "code": "abc666",
+        "stock": "20",
         "status": "true"
     }
 ]

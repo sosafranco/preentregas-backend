@@ -25,7 +25,9 @@ const renderProducts = (products) => {
             `
         productsList.appendChild(productCard)
         // Se agrega el evento para actualizar el producto
-        productCard.querySelector("#boton-eliminar").addEventListener("click", () => { socket.emit("deleteProduct", product.id) })
+        productCard.querySelector("#boton-eliminar").addEventListener("click", () => {
+            socket.emit("deleteProduct", product._id);
+        })
     })
 }
 
@@ -51,3 +53,7 @@ productForm.onsubmit = (e) => {
     socket.emit('addProduct', getProductData());
     productForm.reset();
 };
+
+socket.on('deleteError', (message) => {
+    alert(message);
+});

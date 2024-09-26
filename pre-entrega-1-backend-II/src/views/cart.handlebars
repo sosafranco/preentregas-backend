@@ -1,0 +1,80 @@
+<h1>Carrito de Compras</h1>
+
+{{#if products.length}}
+<div class="cart-products">
+    {{#each products}}
+    <div class="cart-product">
+        <h3>{{this.product.title}}</h3>
+        <p>Precio: ${{this.product.price}}</p>
+        <p>Cantidad:
+            <input type="number" value="{{this.quantity}}" min="1"
+                onchange="updateQuantity('{{this.product._id}}', this.value)">
+        </p>
+        <button onclick="removeFromCart('{{this.product._id}}')">Eliminar</button>
+    </div>
+    {{/each}}
+</div>
+<p>Total: $<span id="cartTotal">{{cartTotal}}</span></p>
+<button onclick="clearCart()">Vaciar carrito</button>
+<button onclick="finalizePurchase()">Finalizar compra</button>
+{{else}}
+<p>El carrito está vacío</p>
+{{/if}}
+
+<script>
+    function removeFromCart(productId) {
+        const cartId = // se obtiene el ID del carrito actua
+            fetch(`/api/carts/${cartId}/products/${productId}`, {
+                method: 'DELETE',
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Producto eliminado del carrito:', data);
+                    location.reload(); // Recargar la página para reflejar los cambios
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Error al eliminar el producto del carrito');
+                });
+    }
+
+    function updateQuantity(productId, newQuantity) {
+        const cartId = // se obtiene el ID del carrito actual
+            fetch(`/api/carts/${cartId}/products/${productId}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ quantity: parseInt(newQuantity) }),
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Cantidad actualizada:', data);
+                    location.reload(); // Recargar la página para reflejar los cambios
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    alert('Error al actualizar la cantidad');
+                });
+    }
+
+    function clearCart() {
+        const cartId = /* obtener el ID del carrito actual */;
+        fetch(`/api/carts/${cartId}`, {
+            method: 'DELETE',
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Carrito vaciado:', data);
+                location.reload(); // Recargar la página para reflejar los cambios
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert('Error al vaciar el carrito');
+            });
+    }
+
+    function finalizePurchase() {
+        // Falta implementar la lógica para finalizar la compra
+    }
+</script>
